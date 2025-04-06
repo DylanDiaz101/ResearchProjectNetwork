@@ -77,10 +77,6 @@ pip install pandas networkx pyvis
 - **Legend Customization:**  
   The legend (key) is injected into the generated HTML file. You can adjust its position, styling, and content by modifying the injected HTML in `graph.py`.
 
-## License
-
-This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
-
 ## Acknowledgments
 
 - [Pyvis](https://pyvis.readthedocs.io/) for interactive network visualization.
