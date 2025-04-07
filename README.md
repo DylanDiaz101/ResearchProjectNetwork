@@ -2,7 +2,7 @@
 
 # Research Project Network Graph
 
-This project provides a GUI-based data entry system for managing research project data and automatically generates an interactive network graph visualization from that data. The network graph is created using Pyvis and NetworkX, and the GUI is built with Tkinter.
+This project provides a GUI-based data entry system for showcasing personal/research projects and their relation to concepts and methodologies by automatically generating an interactive network graph visualization from that data. The network graph is created using Pyvis and NetworkX, and the GUI is built with Tkinter.
 
 ---
 
@@ -60,10 +60,10 @@ pip install pandas networkx pyvis
 
 1. **Run the Data Entry GUI:**
 
-   Execute the main GUI script (for example, `main_gui.py`):
+   Execute the main GUI script (for example, `gui.py`):
 
    ```bash
-   python main_gui.py
+   python gui.py
    ```
 
    This launches the data entry interface where you can add new research projects, manage source tags, view data entries, and save updates to the CSV file.
@@ -80,7 +80,7 @@ pip install pandas networkx pyvis
 
 ## Project Structure
 
-- `main_gui.py` – The main Tkinter GUI script for data entry and CSV management.
+- `gui.py` – The main Tkinter GUI script for data entry and CSV management.
 - `graph.py` – The script for generating and displaying the interactive network graph using Pyvis.
 - `ResearchTopicNetwork.csv` – The CSV file where data entries are saved (automatically generated/updated by the GUI).
 - `sources.json` – The JSON file used for persisting source tag information (automatically generated/updated by the GUI).
