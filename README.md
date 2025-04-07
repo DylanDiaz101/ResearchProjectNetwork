@@ -29,10 +29,7 @@ This project provides a GUI-based data entry system for managing research projec
 ### Network Graph Visualization
 
 - Generate an interactive graph from the CSV file by clicking the **"Display Graph"** button.
-- Nodes are color-coded:
-  - **Concepts:** Professional blue (#2980B9)
-  - **Methods:** Polished orange (#F39C12)
-  - **Projects:** Light grey (#BDC3C7)
+- Nodes are color-coded
 - Custom physics settings allow smooth node dragging with reduced elasticity.
 - A custom legend (key) is injected into the HTML output and displayed outside the graph area.
 
