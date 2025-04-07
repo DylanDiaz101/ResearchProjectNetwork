@@ -4,6 +4,8 @@
 
 This project provides a GUI-based data entry system for showcasing personal/research projects and their relation to concepts and methodologies by automatically generating an interactive network graph visualization from that data. The network graph is created using Pyvis and NetworkX, and the GUI is built with Tkinter.
 
+Currently, only Windows OS is supported.
+
 ---
 
 ## Features
