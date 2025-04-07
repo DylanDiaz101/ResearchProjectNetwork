@@ -13,5 +13,10 @@
     "Virtual Reality": "Method",
     "Psychophysics": "Method",
     "Event Cognition": "Concept",
-    "SOAR": "Method"
+    "SOAR": "Method",
+    "Surveys": "Method",
+    "Cognitive Assessment Task": "Method",
+    "Framing Effect": "Concept",
+    "Hindsight Bias": "Concept",
+    "Risk Aversion & Risk Taking": "Concept"
 }

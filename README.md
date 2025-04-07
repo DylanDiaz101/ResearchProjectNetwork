@@ -4,26 +4,41 @@
 
 This project provides a GUI-based data entry system for managing research project data and automatically generates an interactive network graph visualization from that data. The network graph is created using Pyvis and NetworkX, and the GUI is built with Tkinter.
 
+---
+
 ## Features
 
-- **Data Entry GUI:**
-  - **Add New Data:**  
-    Enter a project title and select one or more source tags. Each source tag is categorized as either a **Concept** or a **Method**, and a data entry is automatically generated and saved to a CSV file.
-  - **Manage Source Tags:**  
-    Add or delete source tags. When deleting a tag that’s in use, the GUI warns you and lists the affected projects.
-  - **Data Entries Table:**  
-    A scrollable, resizable table displays all CSV entries. You can delete individual data entries or refresh the table.
-  - **Save Table:**  
-    Refreshes the table to ensure it reflects the latest data in the CSV file.
+### Data Entry GUI
 
-- **Network Graph Visualization:**
-  - Generate an interactive graph from the CSV file by clicking the "Display Graph" button.
-  - Nodes are color-coded:
-    - **Concepts:** Professional blue (#2980B9)
-    - **Methods:** Polished orange (#F39C12)
-    - **Projects:** Light grey (#BDC3C7)
-  - Custom physics settings allow smooth node dragging with reduced elasticity.
-  - A custom legend (key) is injected into the HTML output and displayed outside the graph area.
+- **Add New Data:**  
+  Enter a project title and select one or more source tags. Each source tag is categorized as either a **Concept** or a **Method**, and a data entry is automatically generated and saved to a CSV file.
+  
+  ![Data Entry GUI Screenshot](Images/GUI_Image1.png)
+
+- **Manage Source Tags:**  
+  Add or delete source tags. When deleting a tag that’s in use, the GUI warns you and lists the affected projects.
+  
+- **Data Entries Table:**  
+  A scrollable, resizable table displays all CSV entries. You can delete individual data entries or refresh the table.
+
+  ![Data Entries Table Screenshot](Images/GUI_Image2.png)
+
+- **Save Table:**  
+  Refreshes the table to ensure it reflects the latest data in the CSV file.
+
+### Network Graph Visualization
+
+- Generate an interactive graph from the CSV file by clicking the **"Display Graph"** button.
+- Nodes are color-coded:
+  - **Concepts:** Professional blue (#2980B9)
+  - **Methods:** Polished orange (#F39C12)
+  - **Projects:** Light grey (#BDC3C7)
+- Custom physics settings allow smooth node dragging with reduced elasticity.
+- A custom legend (key) is injected into the HTML output and displayed outside the graph area.
+
+![Network Graph Visualization Screenshot](Images/NetworkGraphImage.png)
+
+---
 
 ## Installation
 
@@ -41,6 +56,8 @@ Install the required packages with pip:
 ```bash
 pip install pandas networkx pyvis
 ```
+
+---
 
 ## Usage
 
@@ -62,6 +79,8 @@ pip install pandas networkx pyvis
    - Generates an interactive HTML file (`research_topic_network.html`) with the network graph and an injected legend.
    - Opens the generated HTML file in your default web browser.
 
+---
+
 ## Project Structure
 
 - `main_gui.py` – The main Tkinter GUI script for data entry and CSV management.
@@ -70,6 +89,8 @@ pip install pandas networkx pyvis
 - `sources.json` – The JSON file used for persisting source tag information (automatically generated/updated by the GUI).
 - `README.md` – This documentation file.
 
+---
+
 ## Customization
 
 - **Physics Settings:**  
@@ -77,10 +98,12 @@ pip install pandas networkx pyvis
 - **Legend Customization:**  
   The legend (key) is injected into the generated HTML file. You can adjust its position, styling, and content by modifying the injected HTML in `graph.py`.
 
+---
+
 ## Acknowledgments
 
 - [Pyvis](https://pyvis.readthedocs.io/) for interactive network visualization.
 - [Tkinter](https://docs.python.org/3/library/tkinter.html) for the GUI framework.
 - [NetworkX](https://networkx.github.io/) for graph creation and manipulation.
 
----
+--- 

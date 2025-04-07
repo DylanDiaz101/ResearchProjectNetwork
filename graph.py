@@ -34,11 +34,15 @@ net = Network(height="750px", width="100%", bgcolor="white", font_color="black",
 for node in G.nodes():
     if node in source_nodes:
         subject = source_subjects.get(node, "Concept")
-        color = method_color if subject == "Method" else concept_color
-        size = 30
+        if subject == "Method":
+            color = method_color
+            size = 25  # Smaller size for method nodes
+        else:
+            color = concept_color
+            size = 30  # Larger size for concept nodes
     else:
         color = project_color
-        size = 15
+        size = 15  # Project nodes remain unchanged
     net.add_node(node, label=node, color=color, size=size)
 
 for src, dst, data in G.edges(data=True):
